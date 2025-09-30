@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog webpage </title>
+    <link rel="icon" type="image/x-icon"  href="data:image/png;base64,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">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Heading -->
+    <h1 class="m-heading">
+        Milan Blog Website Styled Version
+    </h1>
+
+
+    <!-- nav items  -->
+
+     <ul>
+        <a href=""><li>Home </li></a>
+        <a href=""><li>about us </li></a>
+        <a href=""><li>Contact us </li></a>
+       
+     </ul>
+
+   <!-- blog 1  -->
+     <article>  
+
+         <h2 class="title">How to connect HTML and CSS together </h2>
+         <p>Good morning everyone !! In this fine morning i am here to teach you how you can link your css file with html file . 
+            Steps to link : 
+            step 1 : create a css file (ie : style.css) in the same folder where you have created index.html
+            step 2 : Go to head section in html file and use <link ref="stylesheet"  href="style.css">
+            step 3 : Enjoy bro you did it . YAY !!!!
+         </p>
+
+         <time>7:19 AM</time>
+
+     </article>
+
+   <!-- blog 2  -->
+     <article>  
+
+         <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! </h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas molestiae voluptatem recusandae possimus magni, rem consequuntur id autem odit error consequatur molestias quam dignissimos consectetur cumque delectus debitis numquam doloribus! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, in.
+         </p>
+
+         <time>0:00 AM</time>
+
+     </article>
+
+   <!-- blog 2  -->
+     <article>  
+
+         <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! </h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas molestiae voluptatem recusandae possimus magni, rem consequuntur id autem odit error consequatur molestias quam dignissimos consectetur cumque delectus debitis numquam doloribus! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, in.
+         </p>
+
+         <time>0:00 AM</time>
+
+     </article>
+
+   <!-- blog 2  -->
+     <article>  
+
+         <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! </h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas molestiae voluptatem recusandae possimus magni, rem consequuntur id autem odit error consequatur molestias quam dignissimos consectetur cumque delectus debitis numquam doloribus! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, in.
+         </p>
+
+         <time>0:00 AM</time>
+
+     </article>
+
+   <!-- blog 2  -->
+     <article>  
+
+         <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! </h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas molestiae voluptatem recusandae possimus magni, rem consequuntur id autem odit error consequatur molestias quam dignissimos consectetur cumque delectus debitis numquam doloribus! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, in.
+         </p>
+
+         <time>0:00 AM</time>
+
+     </article>
+
+   <!-- blog 2  -->
+     <article class="title">  
+
+         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! </h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas molestiae voluptatem recusandae possimus magni, rem consequuntur id autem odit error consequatur molestias quam dignissimos consectetur cumque delectus debitis numquam doloribus! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, in.
+         </p>
+
+         <time>0:00 AM</time>
+
+     </article>
+
+   <!-- blog 2  -->
+     <article>  
+
+         <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! </h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas molestiae voluptatem recusandae possimus magni, rem consequuntur id autem odit error consequatur molestias quam dignissimos consectetur cumque delectus debitis numquam doloribus! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, in.
+         </p>
+
+         <time>0:00 AM</time>
+
+     </article>
+
+
+
+
+
+
     
 </body>
 </html>

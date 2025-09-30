@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: #d0ba98;
+    font-family: garena;
+
+}
+
+@font-face {
+    font-family: garena;
+    src: url(./fonts/GFF-Latin-Bold.woff);
+}
+
+.m-heading{
+     text-transform: uppercase;
+     font-size: 50px;
+     font-family: garena;
+     color: rgb(41, 145, 41);
+}
+ li , a {
+ 
+    text-decoration: none;
+ }
+
+
+ article{
+    padding-top: 20px;
+ }
+
+ p{
+    width: 600px;
+    padding-top: 10px;
+ }
+
+ .title{
+    color: rgb(43, 43, 183);
+ }
