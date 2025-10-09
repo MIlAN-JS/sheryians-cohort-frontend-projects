@@ -6,6 +6,7 @@
 html , body{
     height: 100%;
     width: 100%;
+    background-color: #333333;
 }
 
 #layout1{
@@ -20,6 +21,7 @@ html , body{
                         "section1 section2 section3 section4"
                         "mid-section mid-section mid-section mid-section"
                         "footer1 footer2 footer2 footer3";
+                        padding: 10px;
                          
 }
 
@@ -83,6 +85,7 @@ html , body{
     grid-template-areas: "nav1 nav1 nav2 "
                           "l2sec1 l2sec2 l2sec3"
                            "l2f1 l2f2 l2f3";
+                           padding: 10px;
 
 }
 

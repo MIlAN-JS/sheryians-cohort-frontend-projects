@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+main{
+   height:100vh;
+   width:100%;
+   display: grid;
+   place-items: center;
+ background-color: #333333;;
+
+}
+h1{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 5%;
+    font-size: 1vw;
+    font-family: monospace;
+    color: white;
+}
+
+.bento{
+    height: 80%;
+    width: 60%;
+    /* border: 5px solid red; */
+     background-color: #161616;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 0.9fr 0.9fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1fr;
+    grid-template-areas: "better better handshake"
+                         "teamcontainer sync bring"
+                         "teamcontainer touch bring";
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+.bento>div{
+   border-radius: 10px;
+  
+}
+div>img{
+    border-radius: 10px;
+}
+.teamcontainer{
+    grid-area: teamcontainer;
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.better{
+    grid-area: better;
+    background: url(./images/Screenshot\ 2025-10-09\ 135958.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.handshake{
+    grid-area: handshake;
+    background: url(./images/Screenshot\ 2025-10-09\ 140004.png);
+      background-position: center;
+    background-size: cover;
+}
+.team{
+    grid-area: team;
+    height: 70%;
+    /* border: 2px solid black; */
+     background: url(./images/Screenshot\ 2025-10-09\ 140009.png);
+      background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+.sync{
+    grid-area: sync;
+     background: url(./images/Screenshot\ 2025-10-09\ 140014.png);
+      background-position: center;
+    background-size: cover;
+    
+}
+.bring{
+    grid-area: bring;
+     background: url(./images/Screenshot\ 2025-10-09\ 140034.png);
+      background-position: center;
+    background-size: cover;
+}
+.touch{
+    grid-area: touch;
+     background: url(./images/Screenshot\ 2025-10-09\ 140025.png);
+      background-position: center;
+    background-size: cover;
+  
+}
+
+.msg{
+    width: 100%;
+    height: 30%;
+    /* border: 5px solid greenyellow; */
+     background: url(./images/Screenshot\ 2025-10-09\ 140019.png);
+      background-position: center;
+    background-size: cover;
+     border-radius: 10px;
+}
