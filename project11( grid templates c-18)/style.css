@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#layout1{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px 1fr;
+    gap: 10px;
+
+    grid-template-areas: "nav nav nav nav"
+                        "section1 section2 section3 section4"
+                        "mid-section mid-section mid-section mid-section"
+                        "footer1 footer2 footer2 footer3";
+                         
+}
+
+
+.nav{
+    background-color: blue;
+   grid-area: nav;
+}
+
+.section1{
+    background-color: gray;
+   grid-area: section1;
+
+}
+.section2{
+    background-color: lightseagreen;
+   grid-area: section2;
+}
+.section3{
+    background-color: midnightblue;
+   grid-area: section3;
+}
+.section4{
+    background-color: chocolate;
+   grid-area: section4;
+}
+
+.mid-section{
+    background-color: crimson;
+   grid-area: mid-section;
+}
+
+.footer1{
+    background-color: lightblue;
+   grid-area: footer1;
+
+}
+.footer2{
+    background-color: goldenrod;
+   grid-area: footer2;
+    
+}
+.footer3{
+    background-color: firebrick;
+   grid-area: footer3;
+    
+}
+
+
+/* styling layout 2  */
+
+.layout2{
+    margin-top: 2vw;
+    width: 100%;
+    height: 100vh;
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px ;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "nav1 nav1 nav2 "
+                          "l2sec1 l2sec2 l2sec3"
+                           "l2f1 l2f2 l2f3";
+
+}
+
+
+.nav1{
+    background-color: blue;
+    grid-area: nav1;
+}
+.nav2{
+    background-color: crimson;
+    grid-area: nav2;
+}
+
+.l2sec1{
+    background-color: blueviolet;
+    grid-area: l2sec1;
+}
+.l2sec2{
+    background-color: green;
+    grid-area: l2sec2;
+}
+.l2sec3{
+    background-color: greenyellow;
+    grid-area: l2sec3;
+}
+
+.l2f1{
+    background-color: mediumvioletred;
+    grid-area: l2f1;
+}
+
+.l2f2{
+    background-color: firebrick;
+    grid-area: l2f2;
+}
+
+.l2f3{
+    background-color: goldenrod;
+    grid-area: l2f3;
+}

@@ -1,0 +1,1 @@
+Hello everyone i have learned css grid and other properties about grid layout and i will be creating different layouts to practise grid . its the work of our class 16
