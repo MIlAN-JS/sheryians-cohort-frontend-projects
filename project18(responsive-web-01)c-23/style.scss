@@ -68,7 +68,7 @@ main{
         max-width: 1800px;
         // border: 2px solid red;
         @include flex-center(center,space-between);
-        padding: 0 1.2rem;
+        padding: 1rem 1.2rem;
 
            .buttons{
             width: 90%;
