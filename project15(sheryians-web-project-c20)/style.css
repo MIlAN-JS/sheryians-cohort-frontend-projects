@@ -32,7 +32,8 @@
   font-family: helveticam;
   src: url(./fonts/HelveticaNowDisplay-Medium_2wEhlmo-TD_wsqqEEwmJC.woff2);
 }
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
 }
@@ -282,7 +283,7 @@ main .courses section .course-container .course .top .content-wrapper .name :nth
   font-size: 1.4rem;
 }
 main .courses section .course-container .course .top .content-wrapper .name :nth-child(2) {
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   padding: 4px 13px;
   border-radius: 0.4em;
   font-size: 0.9rem;
@@ -307,7 +308,7 @@ main .courses section .course-container .course .top .content-wrapper .price .le
 }
 main .courses section .course-container .course .top .content-wrapper .price .left-price :nth-child(2) span {
   font-size: 1.2rem;
-  color: #7C7C7C;
+  color: #7c7c7c;
   margin-left: 6px;
   text-decoration: line-through;
 }

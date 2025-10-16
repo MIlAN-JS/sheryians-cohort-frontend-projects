@@ -7,26 +7,71 @@ html , body{
     height: 100%;
     width: 100%;
 }
-main{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main{
    height:100vh;
    width:100%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px , max-content));
 }
 
 
-.card-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
-  gap: 24px;
- border: 2px solid green;
-  padding: 40px;
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto; /* centers the whole layout */
-  background: #f8f9fa; /* optional, just for contrast */
-  justify-content: center;
-}
 
 
 .card{
-    border: 2px solid blue;
-}
+
+    border: 2px solid red;
+    width: 100%;
+    
+} */
