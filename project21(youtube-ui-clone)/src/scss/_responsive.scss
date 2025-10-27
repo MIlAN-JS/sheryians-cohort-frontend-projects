@@ -1,0 +1,287 @@
+
+
+
+@media (min-width: 790px){
+    main{
+        
+   grid-template-columns: 0.15fr 1fr;
+   grid-template-rows: 10% 10% 1fr;
+   grid-template-areas: "top-nav top-nav"
+                        "aside bottom-nav"
+                        "aside video-section"  ;
+
+                        aside{
+                            display: flex;
+                        }
+          
+    }
+
+}
+
+
+@media(min-width: 572px){
+    main{
+        .video-section{
+             grid-template-columns: 1fr 1fr;
+             row-gap: 1.5rem;
+             column-gap: 2rem;
+             
+             .video-card{
+                .video-info{
+                    .channel-logo{
+                        img{
+                            width: 40px;
+                        }
+                    }
+                }
+             }
+        }
+    }
+}
+
+
+@media(min-width: 430px){
+   
+    main{
+         .nav1{
+        .right-nav{
+
+        .mic{
+         display: flex;
+      }
+       .bell{
+        display: flex;
+       }
+
+        }
+    }
+    }
+}
+
+@media(min-width: 658px){
+    main{
+
+            .nav1{
+
+                gap: 5rem;
+
+
+                .left-nav{
+                    flex: 0 0 fit-content;
+
+                    .logo{
+                        width: 8rem;
+                    }
+                }
+                
+                
+        .right-nav{
+
+            flex: 0 0 fit-content;
+
+        .mic{
+         display: none;
+      }
+        .search{
+            display: none;
+        }
+
+        }
+
+        .middle-nav{
+            // border: 2px solid green;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+            gap: 1rem;
+            >i{
+                @include mixins.icon(2rem);
+               
+                padding: 0.4rem 0.6rem;
+             
+            }
+
+            .search-container{
+                display: flex;
+                border: 1px solid gray;
+                border-radius: 2rem;
+                overflow: hidden;
+                width: 60%;
+                height: 70%;
+                
+               
+                
+
+                input{
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    width: 100%;
+                    font-size: 1.2rem;
+                    padding: 0 1.4rem;
+                    color: white;
+
+                    &::placeholder{
+                        font-size: 1.2rem;
+                    }
+
+                    &::-webkit-search-cancel-button{
+                        -webkit-appearance: none;
+                        appearance: none;
+                    }
+                  
+
+                }
+                
+
+                   div{
+                   
+                    padding: 0.8rem 1.7rem;
+                    background-color: #222222;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    i{
+                       @include mixins.icon(2rem)
+                    }
+                   }
+            }
+        }
+    }
+
+    aside{
+          .main-aside{
+            display: none;
+          }
+    }
+        
+    }
+}
+
+
+@media(min-width:960px){
+    main{
+         
+
+        .video-section{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media(min-width:1313px){
+     main{
+        aside{
+            width: 100%;
+           padding: 0 0.8rem;
+           display: flex;
+           flex-direction: column;
+
+            .sm-items{
+                display: none;
+            }
+
+            .top-aside{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 1rem;
+                width: 100%;
+               height: fit-content;
+               border-bottom: 1px solid gray;
+               padding: 1.5rem 0.8rem;
+                
+
+                  .lg-aside-item{
+                    display: flex;
+                    gap: 2rem;
+                    align-items: center;
+                    width: 100%;
+                    
+                    img{
+                        width: 1.7rem;
+                    }
+
+                    i{
+                        font-size: 1.3rem;
+                        color: white;
+                    }
+
+                    small{
+                        font-size: 1rem;
+                        color: white;
+                       
+                    }
+                  }
+            }
+
+
+            .you-aside{
+                display: flex;
+                flex-direction: column;
+                color: white;
+                gap: 1.5rem;
+                border-bottom: 1px solid gray;
+                padding: 1.5rem 0;
+               
+                  .you-items{
+                        display: flex;
+                        gap: 2rem;
+                        align-items: center;
+                        
+                       
+                        i{
+                            font-size: 1.2rem;
+                        }
+                        small{
+                            font-size: 1rem;
+                        
+                            
+                        }
+                  }
+            }
+
+
+            .subscriptions-aside{
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                color: white;
+                padding: 1rem 0;
+
+                h2{
+                    font-size: 1.3rem;
+                }
+                  
+                .sub-items{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    img{
+                        width: 2.2rem;
+                        border-radius: 50%;
+                    }
+
+                    span{
+                        font-size: 1.1rem;
+                        color: white;
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+     }
+}

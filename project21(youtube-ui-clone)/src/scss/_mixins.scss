@@ -1,0 +1,14 @@
+@mixin button($background-color , $color){
+      padding: 0.5rem 0.8rem;
+       border: none;
+     border-radius: 0.4rem;
+     font-size: 1rem;
+     background-color: $background-color;
+    color: $color;
+}
+
+
+@mixin icon($font-size){
+  font-size: $font-size;
+  color: white;
+}
