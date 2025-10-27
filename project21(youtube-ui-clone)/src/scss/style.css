@@ -148,6 +148,7 @@ main .video-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 1.5rem;
+  height: 100vh;
 }
 main .video-section::-webkit-scrollbar {
   display: none;

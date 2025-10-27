@@ -200,7 +200,7 @@ main .client div p {
 }
 main .vision {
   display: grid;
-  grid-template-rows: auto;
+  grid-auto-rows: auto;
   color: white;
   padding: 1rem;
   gap: 1rem;

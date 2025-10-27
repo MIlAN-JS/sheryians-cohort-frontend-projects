@@ -10,68 +10,54 @@ html , body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* main{
-   height:100vh;
-   width:100%;
-   display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(300px , max-content));
+.slider-container{
+      width: 100%;
+      border: 1px solid red;
+      height: var(--height);
+      overflow: hidden;
 }
 
 
-
-
-.card{
-
-    border: 2px solid red;
+.slider-container .list{
+    display: flex;
     width: 100%;
+    min-width: calc(var(--width)* var(--quantity));
+    position: relative;
+  
+}
+
+.slider-container .list .item{
+    height: var(--height);
+    width: var(--width);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    animation-delay: calc((10s / var(--quantity) * (var(--position) - 1 )));
+}
+
+.slider-container .list .item img{
+    width: 100%;
+  
     
-} */
+}
+
+
+.slider-container :hover  .item{
+    animation-play-state: paused !important;
+    filter: grayscale(1);
+}
+
+
+.slider-container .item:hover{
+    filter: grayscale(0);
+}
+
+
+@keyframes autoRun{
+    from{
+        left: 100%;
+
+    }to{
+        left: calc(var(--width)* -1);
+    }
+}
