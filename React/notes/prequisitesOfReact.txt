@@ -1,0 +1,20 @@
+
+
+
+# Destructuring
+  - of array
+  - of object
+  - spread operator
+  - rest operator
+
+#functions
+  -basic functions
+  -arrow functions
+  -return statement
+  -parameter , argument
+
+
+5. promises , async / await , fetch api , error handelling(try , catch )
+6. import , export 
+
+

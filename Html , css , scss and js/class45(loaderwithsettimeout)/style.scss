@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+main{
+   width:100%;
+   height: 100vh;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+     .card{
+        height: 400px;
+        width: 40%;
+        background-color: rgb(247, 162, 162);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        border-radius: 1rem;
+
+        p{
+            font-size: 2rem;
+            text-align: center;
+
+            span{
+                color: royalblue;
+            }
+        }
+
+         .outer{
+            width: 90%;
+            border: 2px solid black;
+            height: 30px;
+            border-radius: 2rem;
+            overflow: hidden;
+              .inner{
+                width: 0%;
+                height: 100%;
+                background-color: green;
+                border-radius: 2rem;
+              }
+         }
+
+         .lower{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+
+             h1{
+                font-size: 4rem;
+                font-weight: 500;
+             }
+
+              button{
+                font-size: 2rem;
+                padding: 1rem 2rem;
+                cursor: pointer;
+
+                &:active{
+                    scale: 0.9;
+                }
+                
+              }
+         }
+     }
+}
