@@ -43,7 +43,7 @@ export default function Hero(){
           (),HeroText(), HeroBtn(),modelImg
      ])
 
-     return heroContainer
+     return heroContainer;
 
 
 
