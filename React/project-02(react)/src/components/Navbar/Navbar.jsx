@@ -1,4 +1,4 @@
-import Navlink from "./navlink"
+import Navlink from "./Navlink"
 import { GiHamburgerMenu } from "react-icons/gi";
 
 
