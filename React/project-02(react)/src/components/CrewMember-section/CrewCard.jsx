@@ -17,7 +17,7 @@ const CrewCard = ({crewName , crewDetail , skillName , skillDetail , imgLink , f
                 </div>
                 <div className="skill h-1/2 bg-tri p-8 flex flex-col gap-5 rounded-lg">
                     
-                    <h2 className='text-2xl font-bold'>{skillName};</h2>
+                    <h2 className='text-2xl font-bold'>{skillName}</h2>
                     <p className='text-lg '>{skillDetail} </p>
                 </div>
             </div>

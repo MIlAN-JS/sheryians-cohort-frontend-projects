@@ -1,4 +1,5 @@
 import React from 'react'
+import sonu from '../../assets/simg.png'
 import CrewCard from './CrewCard'
 
 const Crew = () => {
@@ -115,6 +116,7 @@ const Crew = () => {
            
               
                 />
+
                 {/* jinbei card  */}
                 <CrewCard
                
@@ -126,6 +128,19 @@ const Crew = () => {
 
              imgLink="https://i.pinimg.com/1200x/63/05/94/63059440c18b950df8f4f6ae117bd0e1.jpg"
              flexRev="flex-row-reverse"
+              
+                />
+                {/* sonu card  */}
+                <CrewCard
+               
+        crewName="SONU : SANU MANXE"
+        crewDetail="I’m sonu, a human and a girl who likes to stay silent cause  Everything happens for a reason..."
+        skillName="Skill : Teaching , Smiling , Staying silent "
+        skillDetail="A secret art to control other Humans ."
+
+
+             imgLink={sonu}
+             
               
                 />
 
