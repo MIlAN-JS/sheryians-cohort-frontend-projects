@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+@theme{
+    --color-background: #BFE0FE;
+    --color-links : #3672FF;
+
+
+
+
+
+    /* breakpoints */
+    --breakpoint-desktop: 1280px;
+}

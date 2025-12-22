@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: logo;
+  src: url(./assets/fonts/SukajanBrushDemoRegular-q2Mmx.otf);
+}
+
+@theme{
+  --color-primary: #1E1E1E;
+  --color-secondary:#EB726A;
+  --color-tri:#1E1E1E;
+
+  --font-logo:logo;
+}
